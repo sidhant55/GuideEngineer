@@ -1,0 +1,149 @@
+<DOCTYPE!>
+<html>
+<head>
+<title>GuideEngineers</title>
+<meta name='viewport'content='width=device-width,initia-scale=1'>
+<link rel="stylesheet"  href="1.css">
+<style>
+p.a3
+{
+padding-top:20px;
+font-size:20px;
+}
+p.a2
+{
+padding-left:10%;
+font-size:20px;
+}
+p.a1
+{
+padding-left:5%;
+font-size:20px;
+}
+table,a.c5
+{
+text-align:center;
+color:brown;
+font-size:20px;
+
+}
+h2.c5
+{
+text-align:center;
+font-size:30px;
+color:brown;
+}
+</style>
+</head>
+<body>
+<h1><a class="head">Guide Engineers</a></br>
+the only search engine for engineers</br>
+<a href="Home.html"><button class="button">Home</button></a>
+<a href="Condition.html"><button class="button">Guide</button></a>
+<button class="button">Notifications</button>
+<button id="myBtn1" class="button">Register</button></h1>
+
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">×</span>
+    <form style="font-size:20px;">
+    <h3 style="text-align:center; font-size:30px;">Fill in the required data to login</h3>
+       Name:<input style="margin-left:20px;" required><br><p></p><br>
+       Email:<input style="margin-left:20px;" type='tel' type='email' required>
+    
+       <br><p></p><br>
+       <input type='submit' value="Register" >
+    </form>
+  </div>
+</div>
+
+<script>
+var nam;
+var modal1 = document.getElementById('myModal1');
+
+var btn1 = document.getElementById("myBtn1");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() 
+{
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() 
+{
+    modal1.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+function my() 
+{
+   nam=document.getElementById('q').value;
+   document.getElementById('d1').innerHTML=nam;
+   document.getElementById('d2').innerHTML="Profile";
+   alert("Here the window is getting refreshed due to which my variables value is getting lost that the name is not being displayed at the top right corner");
+}
+
+textfield = document.getElementById("datatext");
+contentselect = document.getElementById("contentselect");
+
+contentselect.onchange = function()
+{
+     var text = contentselect.options[contentselect.selectedIndex].value
+     if(text != "")
+         {
+             textfield.value += text;
+         }
+}
+
+
+</script>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-2"></div>
+  
+    <div class="col-sm-8"> <h2 class="c5">List of Joint Entrance Examination</h2>
+<p class="a3">Finding good colleges for any candidates is very essential for building better futures because it is ultimately the college which connects student's educational life with the professional life.
+ It's one of the most critical stages for each and every individual. Therefore, correct decision should be taken from every possible source and most important is self-satisfaction.
+Don't take admission in any college forcefully. There are many government and private institution and colleges located all over India. Try to fill application forms of all good entrance examinations like JEE Mains, Wbjee, ComedK, VITEEE etc. <p/>
+
+<p class="a1"><b style="color:brown;">*JEE Mains-</b> <p class="a2">This is one of the best entrance examinations which are being held all over India. All IIT (Indian Institute of Technology) and NIT (National Institutes of Technology) as well as few good government funded colleges are providing admission through this entrance examination.
+Its online registration form is available from the month of December. For more information like rank of colleges etc. <a href="Jee mains.html">click here</a> </p></p>
+
+<p class="a1"><b style="color:brown;">*JEE Advance-</b> <p class="a2"> Application form of JEE advance is filled in the month of June, but it is not available for everyone. Only candidates who have qualified JEE mains paper are eligible for giving this examination. By qualifying JEE advance paper you may get admission in different IITs in India.
+ This is one of the most competitive examinations held throughout the world. For more information, <a href="Jee advance.html">click here.</a></p></p>
+
+<p class="a1"><b style="color:brown;">*BITSAT-</b> <p class="a2">This examination is held online in few major cities of India and the application form is available from the month of January. Birla Institute of technology is a private college which can be compared with good IIT's. It has a very good placement cell. To know more about Bits colleges like fees structure, branch etc. <a href="Bitsat.html">click here</a></p></p>
+
+<p class="a1"><b style="color:brown;">*WBJEE-</b> <p class="a2">This is West Bengal Joint Entrance Examination which includes around hundreds of engineering colleges including government, partially government funded and private colleges. With the help of WBJEE you can take admission in many good universities and colleges like Jadhavpur universities, IEM etc. 
+To see the list of colleges according with their ranks and other information <a href="Wbjee.html">click here.</a></p></p>
+.</p></p>
+
+<p class="a1"><b style="color:brown;">*VITEEE-</b> <p class="a2">Vellore Institute of Technology Engineering Entrance Exam is held by Vit College situated at Vellore and Chennai. This private college has improved themselves in every respect in last few years and has a very strong placement cell. Viteee forms are available from mid-November and online examinations are held in all cities. 
+If you want to know the procedure of admission and hostel etc. <a href="vit.html">click here</a></p></p>
+
+<p class="a1"><b style="color:brown;">*COMED-K-</b> <p class="a2">Comed-K is an entrance examination which provides you door to all private colleges in Bangalore. Today, Bangalore is an educational hub for India. You can get admission in any of the top colleges of Bangalore through this entrance examination. The application form is available from the month of January onwards.
+For list of all the colleges along with their opening closing rank <a href="comek.html">click here</a>.</p></p>
+
+<p class="a1"><b style="color:brown;">*Manipal-</b> <p class="a2">This university is located in a state of Sikkim and Karnataka. Candidates without any financial problem should fill Manipal entrance examination and enjoy your life with high quality studies, hostel, campus, sports etc. Qualifying Manipal entrance examination also gives you a chance to study in Dubai. For fee structure and campus <a href="manipal.html">click here.</a></p></p>
+
+<p class="a1"><b style="color:brown;">*KITEE-</b> <p class="a2">This examination allows admission in Kalinga Institute of Industrial Technology which is 5th among all self-financing universities in the nation. This institute is located in a state of Orissa and have a very strong placement cell. This university have all engineering departments to view list <a href="kiit.html">click here</a>.</p></p>
+
+<p class="a1"><b style="color:brown;">*SRMJEEE-</b><p class="a2">This is a private university with incredible placement of student. SRM University is located in Tamil Nadu and is one of the fastest growing private universities. You can apply for it online during the months April and complete your admission process. This college is a bit expensive but students can apply for financial aid and pay low fees. <a href="srm.html">click here</a>.</p></p>
+
+<p class="a1"><b style="color:brown;">*OJEE-</b><p class="a2"> Odisha joint entrance examination application form is available from the month of February. All the private college in Bhubaneswar takes admission on the  basis of OJEE. There are about 50 plus colleges with good placement and campus. For more, <a href="ojee.html">click here</a> </p></p>
+
+<p class="a3">There are many colleges in India and you will also get many out of which you have to choose only one option. This is a very critical stage and you should take each and every step by taking lot of suggestion from seniors and internet. Thus, we are trying to solve out your problem in a best possible way. There are certain things to be kept in mind before taking any decision. <a href="Guide.html">Click here</a> to have a look.</p>
+</div>
+ <div class="col-sm-2"></div>
+  </div>
+</div>
+
+</body>
+</html>

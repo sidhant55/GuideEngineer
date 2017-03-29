@@ -1,0 +1,284 @@
+<DOCTYPE!>
+<html>
+<head>
+<title>GuideEngineers</title>
+<meta name='viewport'content='width=device-width,initia-scale=1'>
+<link rel="stylesheet"  href="1.css">
+<style>
+
+p.a3
+{
+padding-top:20px;
+}
+h1.c1
+{
+background-color:cyan;
+padding-top:50px;
+text-align:center;
+padding-bottom:20px;
+font-size:55px;
+}
+p.a2
+{
+padding-left:100px;
+}
+p.a1
+{
+padding-left:50px;
+}
+table
+{
+text-align:center;
+font-size:20px;
+}
+table.c5,a.c5
+{
+text-align:center;
+color:brown;
+font-size:20px;
+}
+h2.c5
+{
+text-align:center;
+font-size:30px;
+}
+</style>
+
+</head>
+<body>
+<h1><a class="head">Guide Engineers</a></br>
+the only search engine for engineers</br>
+<a href="Home.html"><button class="button">Home</button></a>
+<a href="Condition.html"><button class="button">Guide</button></a>
+<button class="button">Notifications</button>
+<button id="myBtn1" class="button">Register</button></h1>
+
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">×</span>
+    <form style="font-size:20px;">
+    <h3 style="text-align:center; font-size:30px;">Fill in the required data to login</h3>
+       Name:<input style="margin-left:20px;" required><br><p></p><br>
+       Email:<input style="margin-left:20px;" type='tel' type='email' required>
+    
+       <br><p></p><br>
+       <input type='submit' value="Register" >
+    </form>
+  </div>
+</div>
+
+<script>
+var nam;
+var modal1 = document.getElementById('myModal1');
+
+var btn1 = document.getElementById("myBtn1");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() 
+{
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() 
+{
+    modal1.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+function my() 
+{
+   nam=document.getElementById('q').value;
+   document.getElementById('d1').innerHTML=nam;
+   document.getElementById('d2').innerHTML="Profile";
+   alert("Here the window is getting refreshed due to which my variables value is getting lost that the name is not being displayed at the top right corner");
+}
+
+textfield = document.getElementById("datatext");
+contentselect = document.getElementById("contentselect");
+
+contentselect.onchange = function()
+{
+     var text = contentselect.options[contentselect.selectedIndex].value
+     if(text != "")
+         {
+             textfield.value += text;
+         }
+}
+
+
+</script>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-2"></div>
+  
+    <div class="col-sm-8"><h2 class="c5"> JEE Advance</h2>
+<p style="font-size:20px;" class="a3"> IIT are best government engineering colleges in India. It is very difficult to qualify for any of the IIT because the levels of questons are very high. The format of the paper is uncertain and it keeps on changing every year. 
+There's no sample paper published to guess about the format of paper because of all these factors, it's one of the most competitive examinations all over the world. <br>The examination consists of two papers, paper 1 and paper 2.
+Duration of each paper is 3 hours followed by 1 hour break in between both the papers. Maximum marks of the paper is also not fixed and it also keeps on changing every year. In 2015 it was of 504 marks, in your turn it may be of any combination of 3 digits.<br>
+The question paper of JEE advance is made by any of the top 5 or 6 IIT.</p>
+<h3>Rank of IIT according to their opening closing rank,placement, techfest, campus, year of establishment, winning national and international competition etc. </h3>
+<table border="1" style="widhth:100%">
+<col width="750px">
+<col width="750px">
+<col width="750px">
+<col width="750px">
+<tr>
+<td><b>Rank</b></td>
+<td><b>College name</b></td>
+<td><b>Established</b></td>
+<td><b>State</b></td>
+</tr>
+<tr>
+<td>1</td>
+<td>IIT Madras</td>
+<td>1959</td>
+<td>Tamil Nadu</td>
+</tr>
+<tr>
+<td>2</td>
+<td>IIT Bombay</td>
+<td>1958</td>
+<td>Maharastra</td>
+</tr>
+<tr>
+<td>3</td>
+<td>IIT Kharagpur</td>
+<td>1950</td>
+<td>West Bengal</td>
+</tr>
+<tr>
+<td>4</td>
+<td>IIT Delhi</td>
+<td>1962</td>
+<td>Delhi</td>
+</tr>
+<tr>
+<td>5</td>
+<td>IIT Kanpur</td>
+<td>1959</td>
+<td>Uttar Pradesh</td>
+</tr>
+<td>6</td>
+<td>IIT Roorke</td>
+<td>2008</td>
+<td>Uttrakhand</td>
+</tr>
+<tr>
+<td>7</td>
+<td>IIT Hyderabad</td>
+<td>2008</td>
+<td>Telengana</td>
+</tr>
+<tr>
+<td>8</td>
+<td>IIT Gandhinagar</td>
+<td>2008</td>
+<td>Gujarat</td>
+</tr>
+<tr>
+<td>9</td>
+<td>IIT Ropar</td>
+<td>2008</td>
+<td>Punjab</td>
+</tr>
+<tr>
+<td>10</td>
+<td>IIT Patna</td>
+<td>2008</td>
+<td>Bihar</td>
+</tr>
+<tr>
+<td>11</td>
+<td>IIT Guwahati</td>
+<td>1994</td>
+<td>Assam</td>
+</tr>
+<tr>
+<td>12</td>
+<td>IIT BHU</td>
+<td>2008</td>
+<td>Uttar Pradesh</td>
+</tr>
+<tr>
+<tr>
+<td>13</td>
+<td>IIT Indore</td>
+<td>2009</td>
+<td>Madhya Pradesh</td>
+</tr>
+<tr>
+<td>14</td>
+<td>IIT Mandi</td>
+<td>2009</td>
+<td>Himachal Pradesh</td>
+</tr>
+<tr>
+<td>15</td>
+<td>IIT Jodhpur</td>
+<td>2008</td>
+<td>Rajasthan</td>
+</tr>
+<tr>
+<td>16</td>
+<td>IIT Bhubaneswar</td>
+<td>2008</td>
+<td>Odisha</td>
+</tr>
+<tr>
+<td>17</td>
+<td>IIT Palakkad</td>
+<td>2015</td>
+<td>Kerala</td>
+</tr>
+<tr>
+<td>18</td>
+<td>IIT Tirupati</td>
+<td>2015</td>
+<td>Andhra Pradesh</td>
+</tr>
+<tr>
+<td>19</td>
+<td>IIT Dhanbad</td>
+<td>2015</td>
+<td>Jharkhand</td>
+</tr>
+<tr>
+<td>20</td>
+<td>IIT Chhattisgarh</td>
+<td>2016</td>
+<td>Chattisgarh</td>
+</tr>
+<tr>
+<td>21</td>
+<td>IIT Goa</td>
+<td>2016</td>
+<td>Goa</td>
+</tr>
+<tr>
+<td>22</td>
+<td>IIT Jammu and Kashmir</td>
+<td>2016</td>
+<td>Jammu and Kashmir</td>
+</tr>
+<tr>
+<td>23</td>
+<td>IIT Dharwad</td>
+<td>2016</td>
+<td>Karnataka</td>
+</tr>
+</table>
+<p style="font-size:20px;">Around seven IIT have recently been established and have yet not placed any batch. It's difficult to predict their future status. But as it has IIT as a prefix, it will obviously be a good colleges but it will take some time to come into race.</p>
+<p style="font-size:20px;">For any queries or question, post it below and get it answered within 6 hours. We will be mailing you in your registered mail id.</p>
+</div>
+ <div class="col-sm-2"></div>
+  </div>
+</div>
+</body>
+</html>

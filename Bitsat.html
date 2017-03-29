@@ -1,0 +1,130 @@
+<DOCTYPE!>
+<html>
+<head>
+<meta name='viewport'content='width=device-width,initia-scale=1'>
+<title>GuideEngineers</title>
+<link rel="stylesheet"  href="1.css">
+<style>
+h1.c1
+{
+background-color:cyan;
+padding-top:50px;
+text-align:center;
+padding-bottom:20px;
+font-size:55px;
+}
+p.a2
+{
+padding-left:40px;
+font-size:20px;
+}
+p.a1
+{
+font-size:20px;
+}
+table,a.c5
+{
+text-align:center;
+color:brown;
+font-size:20px;
+}
+h2.c5
+{
+text-align:center;
+font-size:30px;
+}
+</style>
+
+
+
+</head>
+<body>
+<h1><a  class="head">Guide Engineers</a></br>
+the only search engine for engineers</br>
+<a href="Home.html"><button class="button">Home</button></a>
+<a href="Condition.html"><button class="button">Guide</button></a>
+<button class="button">Notifications</button>
+<button id="myBtn1" class="button">Register</button></h1>
+
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">×</span>
+    <form style="font-size:20px;">
+    <h3 style="text-align:center; font-size:30px;">Fill in the required data to login</h3>
+       Name:<input style="margin-left:20px;" required><br><p></p><br>
+       Email:<input style="margin-left:20px;" type='tel' type='email' required>
+    
+       <br><p></p><br>
+       <input type='submit' value="Register" >
+    </form>
+  </div>
+</div>
+
+<script>
+var nam;
+var modal1 = document.getElementById('myModal1');
+
+var btn1 = document.getElementById("myBtn1");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() 
+{
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() 
+{
+    modal1.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+function my() 
+{
+   nam=document.getElementById('q').value;
+   document.getElementById('d1').innerHTML=nam;
+   document.getElementById('d2').innerHTML="Profile";
+   alert("Here the window is getting refreshed due to which my variables value is getting lost that the name is not being displayed at the top right corner");
+}
+
+textfield = document.getElementById("datatext");
+contentselect = document.getElementById("contentselect");
+
+contentselect.onchange = function()
+{
+     var text = contentselect.options[contentselect.selectedIndex].value
+     if(text != "")
+         {
+             textfield.value += text;
+         }
+}
+
+
+</script>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-2"></div>
+  
+    <div class="col-sm-8"> <h2 class="c5"> Birla Institute of Technology</h2>
+<p class="a1"> Admission to this University undergoes certain process. You need to first qualify online BITSAT examination. This university have branches in Goa, Pilani and Hyderabad out of which Pilani is the best. Eligibility for appearing in BITSAT exams are candidates should have passed his/her
+secondary examination from registered board. Candidates must secure an aggregate of 75% marks in Physics, Chemistry and Maths with at least 60% marks in each subject. Admission will be made according to the merit basis, the marks scored in BITSAT examination. Direct admission is provided to all the board toppers of central as well as state boards.</p>
+<p class="a1"> Each question consists of four option and reward you 3 marks for each correct answer and -1 for each wrong answer. No marks are awarded if answer is unmarked. The paper consists of 4 parts</p>
+<p  class="a2">Part1- Physics paper of 40 questions.</p>
+<p  class="a2">Part2- Chemistry paper of 40 questions.</p>
+<p  class="a2">Part3- English of 15 questions and Logical reasoning of 10 questions respectively.</p>
+<p  class="a2">Part4- Mathematics or Biology paper of 40 questions.</p>
+
+<p class="a1"> As soon as the entire 150 question is answered, extra 12 questions are given which consists of 4 questions each from Physics Chemistry and Math. And duration of 3 hours is given to solve the whole paper. BITSAT follow the syllabus of NCERT of standard 11 and 12. Bitsat examination is held in 51 big cities. It is not that tough to score marks but it's tough to cross the cut off. 
+To remain in the safe side you should try to bring more than 300 out of 450.The interesting part of this examination is that as soon as you click on submit button your marks will be displayed at your screen.</p>
+</div>
+ <div class="col-sm-2"></div>
+  </div>
+</div>
+</body> 
+</html>

@@ -1,0 +1,336 @@
+<DOCTYPE!>
+<html>
+<head>
+<title>GuideEngineers</title>
+<meta name='viewport'content='width=device-width,initia-scale=1'>
+<link rel="stylesheet"  href="1.css">
+<style>
+
+h1.c1
+{
+background-color:cyan;
+padding-top:50px;
+text-align:center;
+padding-bottom:20px;
+font-size:55px;
+}
+p.a2
+{
+padding-left:100px;
+}
+p.a1
+{
+padding-left:50px;
+}
+p.a3
+{
+padding-top:20px;
+}
+table
+{
+text-align:center;
+font-size:20px;
+}
+table.c5,a.c5
+{
+text-align:center;
+color:brown;
+font-size:20px;
+}
+h2.c5
+{
+text-align:center;
+font-size:30px;
+}
+</style>
+</head>
+<body>
+<h1><a class="head">Guide Engineers</a></br>
+the only search engine for engineers</br>
+<a href="Home.html"><button class="button">Home</button></a>
+<a href="Condition.html"><button class="button">Guide</button></a>
+<button class="button">Notifications</button>
+<button id="myBtn1" class="button">Register</button></h1>
+
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">×</span>
+    <form style="font-size:20px;">
+    <h3 style="text-align:center; font-size:30px;">Fill in the required data to login</h3>
+       Name:<input style="margin-left:20px;" required><br><p></p><br>
+       Email:<input style="margin-left:20px;" type='tel' type='email' required>
+    
+       <br><p></p><br>
+       <input type='submit' value="Register" >
+    </form>
+  </div>
+</div>
+
+<script>
+var nam;
+var modal1 = document.getElementById('myModal1');
+
+var btn1 = document.getElementById("myBtn1");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() 
+{
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() 
+{
+    modal1.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+function my() 
+{
+   nam=document.getElementById('q').value;
+   document.getElementById('d1').innerHTML=nam;
+   document.getElementById('d2').innerHTML="Profile";
+   alert("Here the window is getting refreshed due to which my variables value is getting lost that the name is not being displayed at the top right corner");
+}
+
+textfield = document.getElementById("datatext");
+contentselect = document.getElementById("contentselect");
+
+contentselect.onchange = function()
+{
+     var text = contentselect.options[contentselect.selectedIndex].value
+     if(text != "")
+         {
+             textfield.value += text;
+         }
+}
+
+
+</script>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-2"></div>
+  
+    <div class="col-sm-8"> <h2 class="c5"> JEE Mains</h2>
+<p class="a3" style="font-size:20px;">There are 30 NITs and many GIFT colleges all over India which accepts JEE Mains result. The paper contains 120 questions which are divided into three parts. </p>
+<p style="font-size:20px;" class="a1">Part 1- consists of 30 mathematics questions</p>
+<p style="font-size:20px;" class="a1">Part 2- consists of 30 Physics questions</p>
+<p style="font-size:20px;" class="a1">Part 3- consists of 30 Chemistry questions</p>
+<p style="font-size:20px;">The pattern of the paper is multiple choice question type. Each question has four options out of which only one option will be correct. Four marks are awarded for correct answer and -1 for wrong answer. If the question is left unanswered no marks is awarded.
+Thus the maximum mark of the paper is 360. JEE Main has the speciality that none of the question is repeated till now, each and every question is unique. It tries to check out the concept of the candidates. Every question is composed by combining two or three concept which makes it difficult to score marks.
+Cut off marks is generally around 120 for general citizen, 75 for OBC and 50 for SC/ST. But it depends on the level of paper as in 2015 it got reduced to 105 for general and accordingly</p>
+<p style="font-size:20px;">Rank of colleges are shown according to their opening closing rank, placement, techfest and other events, winning national and international competition etc.</p>
+<h2>NIT</h2>
+<table border="1" style="widhth:100%">
+<col width="750px">
+<col width="750px">
+<col width="750px">
+<col width="750px">
+<tr>
+<td><b>Rank</b></td>
+<td><b>College name</b></td>
+<td><b>Established</b></td>
+<td><b>State</b></td>
+</tr>
+<tr>
+<td>1</td>
+<td>NIT Tiruchirappalli</td>
+<td>2003</td>
+<td>Tamil Nadu</td>
+</tr>
+<tr>
+<td>2</td>
+<td>NIT Surat</td>
+<td>2003</td>
+<td>Gujarat</td>
+</tr>
+<tr>
+<td>3</td>
+<td>VNIT Nagpur</td>
+<td>2002</td>
+<td>Maharashtra</td>
+</tr>
+<tr>
+<td>4</td>
+<td>NIT Rourkela</td>
+<td>2002</td>
+<td>Odisha</td>
+</tr>
+<tr>
+<td>5</td>
+<td>NIT Surathkal</td>
+<td>2002</td>
+<td>Karnataka</td>
+</tr>
+<tr>
+<td>6</td>
+<td>MNIT Allahabad</td>
+<td>2001</td>
+<td>Uttar Pradesh</td>
+</tr>
+<tr>
+<td>7</td>
+<td>NIT Warangal</td>
+<td>2002</td>
+<td>Telangana</td>
+</tr>
+<td>8</td>
+<td>NIT Delhi</td>
+<td>2010</td>
+<td>Delhi</td>
+</tr>
+<tr>
+<td>9</td>
+<td>NIT Calicut</td>
+<td>2002</td>
+<td>Kerala</td>
+</tr>
+<tr>
+<td>10</td>
+<td>MNIT Jaipur</td>
+<td>2002</td>
+<td>Rajasthan</td>
+</tr>
+<tr>
+<td>11</td>
+<td>NIT Jalandhar</td>
+<td>2002</td>
+<td>Punjab</td>
+</tr>
+<tr>
+<td>12</td>
+<td>NIT Kurukshetra</td>
+<td>2002</td>
+<td>Haryana</td>
+</tr>
+<tr>
+<td>13</td>
+<td>MNIT Bhopal</td>
+<td>2002</td>
+<td>Madhya Pradesh</td>
+</tr>
+<tr>
+<td>14</td>
+<td>NIT Hamirpur</td>
+<td>2002</td>
+<td>Himachal Pradesh</td>
+</tr>
+<tr>
+<td>15</td>
+<td>NIT Agartalla</td>
+<td>2006</td>
+<td>Tripura</td>
+</tr>
+<tr>
+<td>16</td>
+<td>NIT Pondicherry</td>
+<td>2010</td>
+<td>Pondicherry</td>
+</tr>
+<tr>
+<td>17</td>
+<td>NIT Meghalaya</td>
+<td>2010</td>
+<td>Meghalaya</td>
+</tr>
+<tr>
+<td>18</td>
+<td>NIT Raipur</td>
+<td>2005</td>
+<td>Chhattisgarh</td>
+</tr>
+<tr>
+<td>19</td>
+<td>NIT Silchar</td>
+<td>2002</td>
+<td>Assam</td>
+</tr>
+<tr>
+<td>20</td>
+<td>NIT Srinagar</td>
+<td>2003</td>
+<td>Jammu and Kashmir</td>
+</tr>
+<tr>
+<td>21</td>
+<td>NIT Goa</td>
+<td>2010</td>
+<td>Goa</td>
+</tr>
+<tr>
+<td>22</td>
+<td>NIT Jamshedpur</td>
+<td>2002</td>
+<td>Jharkhand</td>
+</tr>
+<tr>
+<td>23</td>
+<td>NIT Dharwad</td>
+<td>2016</td>
+<td>Karnataka</td>
+</tr>
+<tr>
+<td>24</td>
+<td>NIT Durgapur</td>
+<td>2003</td>
+<td>West Bengal</td>
+</tr>
+
+<tr>
+<td>25</td>
+<td>NIT Patna</td>
+<td>2004</td>
+<td>Bihar</td>
+</tr>
+<tr>
+<td>26</td>
+<td>NIT Sikkim</td>
+<td>2010</td>
+<td>Sikkim</td>
+</tr>
+
+<tr>
+<td>27</td>
+<td>NIT Nagaland</td>
+<td>2010</td>
+<td>Nagaland</td>
+</tr>
+<tr>
+<td>28</td>
+<td>NIT Manipur</td>
+<td>2010</td>
+<td>Manipur</td>
+</tr>
+<tr>
+<td>29</td>
+<td>NIT Uttarakhand</td>
+<td>2016</td>
+<td>Uttarakhand</td>
+</tr>
+
+<tr>
+<td>30</td>
+<td>NIT Mizoram</td>
+<td>2010</td>
+<td>Mizoram</td>
+</tr>
+</Table>
+<p style="font-size:20px;">Other Gift colleges are which accepts JEE Main marks are BIT Ranchi, BIT Deogarh, BIT Patna, LPU Jaipur, PICT Pune etc. These colleges accepts JEE Main marks and allow admission by fixing particular cut off marks which depends on the level of paper and some other factors.
+There's a lot of option available for you all as many new IITs, NIT and GIFT colleges have been introduced which increases the seat capacity.</p> 
+<p style="font-size:20px;"> For any queries or question, post it below and get it answered within 6 hours. We will be mailing you in your registered mail id.</p>
+
+</div>
+ <div class="col-sm-2"></div>
+  </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+ <style type="text/css">
+#img{display:-webkit-box;-webkit-box-pack:center;opacity:0.8;}
+</style>
+<script type="text/javascript">
+
+var arr = [];
+
+arr[0]= new Image();
+arr[0].src = "lib.jpg";
+
+arr[1]= new Image();
+arr[1].src = "img2.jpg";
+
+arr[2]= new Image();
+arr[2].src = "img3.jpg";
+
+var i=0;
+
+function slide(){
+ document.getElementById("image1").src= arr[i].src;
+ i++;
+ if(i==arr.length){
+  i=0;
+ }
+ setTimeout(function(){ slide(); },3000);
+}
+
+</script>
+</head>
+
+<body onLoad="slide('image1',arr);">
+<div id="img"><img id="image1" height="600px" width="1400" border="5" style="border-color:white;" /></div>
+
+
+
+</body>
+
+</html>

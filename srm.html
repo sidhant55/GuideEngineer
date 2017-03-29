@@ -1,0 +1,135 @@
+<DOCTYPE!>
+<html>
+<head>
+<title>GuideEngineers</title>
+<meta name='viewport'content='width=device-width,initia-scale=1'>
+<link rel="stylesheet"  href="1.css">
+<style>
+h2
+{
+text-align:center;
+font-size:40px;
+}
+h3
+{
+text-align:center;
+font-size:30px;
+}
+body
+{
+font-size:20px;
+}
+</style>
+<h1><a class="head">Guide Engineers</a></br>
+the only search engine for engineers</br>
+<a href="Home.html"><button class="button">Home</button></a>
+<a href="Condition.html"><button class="button">Guide</button></a>
+<button class="button">Notifications</button>
+<button id="myBtn1" class="button">Register</button></h1>
+
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">×</span>
+    <form style="font-size:20px;">
+    <h3 style="text-align:center; font-size:30px;">Fill in the required data to login</h3>
+       Name:<input style="margin-left:20px;" required><br><p></p><br>
+       Email:<input style="margin-left:20px;" type='tel' type='email' required>
+    
+       <br><p></p><br>
+       <input type='submit' value="Register" >
+    </form>
+  </div>
+</div>
+
+<script>
+var nam;
+var modal1 = document.getElementById('myModal1');
+
+var btn1 = document.getElementById("myBtn1");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() 
+{
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() 
+{
+    modal1.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+function my() 
+{
+   nam=document.getElementById('q').value;
+   document.getElementById('d1').innerHTML=nam;
+   document.getElementById('d2').innerHTML="Profile";
+   alert("Here the window is getting refreshed due to which my variables value is getting lost that the name is not being displayed at the top right corner");
+}
+
+textfield = document.getElementById("datatext");
+contentselect = document.getElementById("contentselect");
+
+contentselect.onchange = function()
+{
+     var text = contentselect.options[contentselect.selectedIndex].value
+     if(text != "")
+         {
+             textfield.value += text;
+         }
+}
+
+
+</script>
+
+</head>
+
+<body>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-2"></div>
+  
+    <div class="col-sm-8"><h2>SRM University</h2>
+
+<p>The SRM University (Sri Ramaswamy Memorial University), earlier known as SRM Institute of Science and Technology, is a deemed university in the state of Tamil Nadu, India. 
+It was established in 1985 as SRM Engineering College in Kattankulathur, under University of Madras. It has 7 campuses out of which 4 are in Tamil Nadu.</br>
+The university has been ranked as India's No. 1 private university by Zee News, Deccan Chronicle and India Today. The university has managed 8th position according to Careers 360 as Top Private Universities in India 2015.
+Application form for applying in this university is available till the month of march and then then slot booking procedure takes place. Computer based examination get started from second half of April.</p>
+
+<h3>Exam Pattern</h3>
+
+<p>Computer based entrance examination is being held in different cities. Each question has four option out of which only one option is correct. 1 marks is deducted for every wrong answer and three marks is awarded for
+every correct answer</p>
+<p style="padding-left:10%;">Part 1: Pysics paper of 35 question</p>
+<p style="padding-left:10%;">Part 2: Chemistry paper of 35 question</p>
+<p style="padding-left:10%;">Part 3: Mathematics paper of 35 question</p>
+<p style="padding-left:10%;">Total marks: 315</p>
+
+
+<h3>Fee structure and counselling process</h3>
+
+<p>Annual academic fee charged by SRM university is 1,50,000 excluding hostel fee. Hostel and mess would charge around 1,00,000 per year. Overall its quite expensive but loan is easily available for these colleges.</p>
+<p>After getting the call letter you need to carry all your documents to any counselling centre. Documents includes-</p>
+<ul>
+<li>SRMJEE counselling call letter</li>
+<li>SRMJEE rak card  </li>
+<li>SRMJEE hall ticket  </li>
+<li>Class 10 mark sheet  </li>
+<li>Class 12/Equivalent mark sheet  </li>
+<li>Demand Draft of specified amount</li>
+<li>Documents related to casts(if other than general)</li>
+</div>
+ <div class="col-sm-2"></div>
+  </div>
+</div>
+
+</body>
+</html>
+

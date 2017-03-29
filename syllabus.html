@@ -1,0 +1,814 @@
+<DOCTYPE!>
+<html>
+<head>
+<title>GuideEngineers</title>
+<meta name='viewport'content='width=device-width,initia-scale=1'>
+<link rel="stylesheet"  href="1.css">
+<style>
+p
+{
+
+}
+h2
+{
+text-align:center;
+font-size:40px;
+}
+
+body
+{
+font-size:20px;
+}
+p.a2
+{
+padding-left:13%;
+padding-right:13%;
+}
+h4.p1
+{
+display:inline-block;
+float:left;
+width:20%;
+}
+ul.p2
+{
+display:inline-block;
+width:80%;
+}
+button.btn
+{
+display:block;
+width:75%;
+font-size:22px;
+background-color:red;
+}
+@media screen and (max-width:8in){
+h4.p1
+{
+
+float:center;
+width:100%;
+}
+ul.p2
+{
+display:block;
+width:100%;
+}
+button.btn
+{
+width:100%;
+}
+}
+</style>
+
+
+<script>
+var nam;
+var modal1 = document.getElementById('myModal1');
+
+var btn1 = document.getElementById("myBtn1");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() 
+{
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() 
+{
+    modal1.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+function my() 
+{
+   nam=document.getElementById('q').value;
+   document.getElementById('d1').innerHTML=nam;
+   document.getElementById('d2').innerHTML="Profile";
+   alert("Here the window is getting refreshed due to which my variables value is getting lost that the name is not being displayed at the top right corner");
+}
+
+textfield = document.getElementById("datatext");
+contentselect = document.getElementById("contentselect");
+
+contentselect.onchange = function()
+{
+     var text = contentselect.options[contentselect.selectedIndex].value
+     if(text != "")
+         {
+             textfield.value += text;
+         }
+}
+ function show (toBlock){
+    setDisplay(toBlock, 'block');
+  }
+  function hide (toNone1,toNone2) {
+    setDisplay(toNone1, 'none');
+    setDisplay(toNone2, 'none');
+  }
+  function setDisplay (target, str) {
+    document.getElementById(target).style.display = str;
+  }
+
+</script>
+
+
+</head>
+<body>
+<h1><a class="head">Guide Engineers</a></br>
+the only search engine for engineers</br>
+<a href="Home.html"><button class="button">Home</button></a>
+<a href="Condition.html"><button class="button">Guide</button></a>
+<button class="button">Notifications</button>
+<button id="myBtn1" class="button">Register</button></h1>
+
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">×</span>
+    <form style="font-size:20px;">
+    <h3 style="text-align:center; font-size:30px;">Fill in the required data to login</h3>
+       Name:<input style="margin-left:20px;" required><br><p></p><br>
+       Email:<input style="margin-left:20px;" type='tel' type='email' required>
+    
+       <br><p></p><br>
+       <input type='submit' value="Register" >
+    </form>
+  </div>
+</div>
+
+<section class="x">
+<h2>Syllabus of JEE Mains/Advance</h2>
+<p class="a2">This the official CBSE syllabus for joint entrance examination and is generally all the joint entrance examination follow this syllabus. Without knowing proper sylabus
+it is very difficult how to start and from where to start. So, studing according to the syllabus is very essential but remember one thing my dear friends "Syllabus is just
+an indication not the destination"</p>
+<div class="container-fluid">
+<div class="row">
+
+<div class="col-sm-2">
+<button class="btn" id="clickMeId1" onclick="show('physics'); hide('chemistry','math')">Physics</button>
+<button class="btn" id="clickMeId2" onclick="show('chemistry'); hide('math','physics')">Chemistry</button>
+<button class="btn" id="clickMeId3" onclick="show('math'); hide('physics','chemistry')">Mathematics</button></div>
+
+    <div class="col-sm-8">
+<div id="physics" style="display:none;"> 
+<h2>Physics</h2>
+<h4 class="p1">Introduction</h4>
+<ul class="p2"><li>Vectors</li>
+<li>Diffrential Calculus</li>
+<li>Integral Calculus</li>
+<li>Significant figures and errors</li>
+<li>Measuring Instrument:Vernier Calliper and Screw Guage</li></ul>
+
+<h4 class="p1">1-D Motion</h4>
+<ul class="p2"><li>One dimensional motion with constant velocity. Representation as v-t, s-t, a-t etc.</li>
+<li>Uniformly accelerated motion</li>
+<li>Motion under gravity</li>
+<li>Variable acceleration</li>
+<li>Relative velocity</li></ul>
+
+<h4 class="p1">Projectile Motion</h4>
+<ul class="p2"><li>Projectile motion on ground, Horizontal projection from height</li>
+<li> </li></ul>
+
+
+<h4 class="p1">Forces</h4>
+<ul class="p2"><li>Idea of forces:tension,normal reaction. Resolution of forces and force equation for equilibrium.</li>
+<li>Free body diagrams and force equation for equilibrium and acceleration</li>
+<li>Constraint equation elementry inclined plane setups</li>
+<li>Pseudo force concept</li></ul>
+
+<h4 class="p1">Friction</h4>
+<ul class="p2"><li>Idea of kinetic and static fraction</li>
+<li>Set up based on friction including two body set up</li></ul>
+
+<h4 class="p1">Work Power and Energy</h4>
+<ul class="p2"><li>Concept of work, power, conservation of energy</li>
+
+<li>Work-Energy theorom</li>
+<li>Concept of spring force</li></ul>
+
+<h4 class="p1">Cirular Motion</h4>
+<ul class="p2"><li>Angular terms and centripetal acceleration</li>
+<li>Uniform circular motion</li>
+<li>Vertical circular motion:complete circles or less than semicircular arc</li></ul>
+
+<h4 class="p1">CM and MI</h4>
+<ul class="p2"><li>Centre of Mass:Defination and for point mas system</li>
+<li>Centre of Mass:Continuous mass distribution</li>
+<li>Moment of Inertia:Defination, Parallel and Perpendicular axis theorom</li>
+<li>Moment of Inertia:Standard geometries</li></ul>
+
+<h4 class="p1">Momentum and Collision</h4>
+<ul class="p2"><li>Concept of momentum and impulse</li>
+<li>Conservation of linear momentum and conservation of energy</li>
+<li>One dimensional collision:perfectly elastic and inelastic</li>
+<li>Coefficient of restitution</li>
+<li>Oblique collisions between circular cross-section</li>
+<li>Oblique collisions between circular and flat bodies</li>
+<li>Impulse in strings, Varible mass system</li></ul>
+
+<h4 class="p1">Rotational dynamics</h4>
+<ul class="p2"><li>Translational Rotational Equivalents</li>
+<li>Equilibrium of rigid bodies</li>
+<li>Concept of pure rollings</li>
+<li>Frictional force direction in translatinal and rotational motion</li>
+<li>Pure rolling setups:Forces and Torques</li>
+<li>Angular Momentum</li>
+<li>Collisions with rotation:circular crossection setup</li>
+<li>Collisions with rotation:particles with rods(pivoted or free)</li></ul>
+
+<h4 class="p1">Gravitation</h4>
+<ul class="p2"><li>Basic terms:Intensity, Potential energy, point mass systems</li>
+<li>Basic results for sphere</li>
+<li>variation of gravity with height and latitude</li>
+<li>Circullar orbits of satellites, Eleptical orbits</li></ul>
+
+<h4 class="p1">SHM</h4>
+<ul class="p2"><li>Basic defination</li>
+<li>Mathematical aspects</li>
+<li>Basic spring concepts:Force and Potential energy</li>
+<li>Spring setups SHM</li>
+<li>Multiple springs and mass setups</li>
+<li>Non spring setups for linear SHM</li>
+<li>Angular SHM plus rotational dynamics:Mathematical Pendulum</li>
+<li>Angular SHM: Springs and Non-springs setups</li></ul>
+
+<h4 class="p1">Fluid Mechanics</h4>
+<ul class="p2"><li>Fluid pressure, Archimedes Principle</li>
+<li>Archimedes principle with multiple fluids</li>
+<li>Bernoulli's principle and Equation of Continuity</li>
+<li>Bernoulli's principle for multiple fluids, Fore due to effluxing fluids</li>
+<li>Surface tension and surface energy</li>
+<li>Capillarity</li>
+<li>Viscosity and Stokes' law, Reylond's number</li>
+<li>Viscous force on fluid through pipes</li></ul>
+
+<h4 class="p1">Elasticity</h4>
+<ul class="p2"><li>Stress and Strain, Energy density: Simple force systems</li>
+<li></li></ul>
+
+<h4 class="p1">Expansion-Calorimetry</h4>
+<ul class="p2"><li>Thermal Expansion</li>
+<li>Calorimetry</li>
+<li>Specific Capacity and Specific Heat Capacity</li></ul>
+
+<h4 class="p1">Heat Transfer</h4>
+<ul class="p2"><li>Conduction, Heat Current: thermal resistance</li>
+<li>Conductivity setups</li>
+<li>Radiations:newtons law of cooling</li>
+<li>Radiations:Stefan's law of Radiation, Wien's Displacement Law</li></ul>
+
+<h4 class="p1">Gas and Kinetic Theory</h4>
+<ul class="p2"><li>Gas Pressure: Open and Closed tubes</li>
+<li>Kinetic theory of gases, Eqipartition of energy, Degree of freedom</li>
+<li>Concept of Molar Heat Capacity, PV, VT, TV diagrams</li>
+<li>Representation of standard process on above graphs</li></ul>
+
+<h4 class="p1">First law of Thermodynamics</h4>
+<ul class="p2"><li>Theory of First law of Thermodynamics</li>
+<li>Standard process and their specific heats</li>
+<li>Adiabatic and Polytropic process</li>
+<li>Multiple Chambers system</li>
+<li>Efficiency and Carnot cycle</li></ul>
+
+<h4 class="p1">Current Electricity</h4>
+<ul class="p2"><li>Resistances in series and parallel, current distribution, identical cell in series and parallel</li>
+<li>Kirchoff's law,Equivalent resistance of resistance arrangement</li>
+<li>Cell Equivalent, Symmetry, Inverse Symmetry</li>
+<li>Heat in resistors</li>
+<li>Electrical instruments and drift velocity</li></ul>
+
+<h4 class="p1">Electrostatics</h4>
+<ul class="p2"><li>Point charge in two dimension:force, intensity, potential</li>
+<li>Point charge in space, potential energy</li>
+<li>Continuous charge intensities and potential for standard geometry</li>
+<li>Continuous charge: Potential Energy, Energy Density</li>
+<li>Electric flux and Gauss Law</li>
+<li>Dipoles</li></ul>
+
+<h4 class="p1">Capacitors</h4>
+<ul class="p2"><li>Parallel plate capacitor:basic terms, charge distribution</li>
+<li>Uncharged capacitor networks:charge distribution etc.</li>
+<li>Effect of dielectric, Cylindrical and Spherical capacitors</li>
+<li>Potential energy and heat in capacitor</li>
+<li>Arrangement of plates to form capacitors, Force on dielectric in parallel plate capacitors</li></ul>
+
+<h4 class="p1">Electromagnetism</h4>
+<ul class="p2"><li>Biot Savart Law, Magnetic Induction for standard geometries</li>
+<li>Magnetic Induction, Ampere's law, Magnetic Moment</li>
+<li>Effect of magnetic field on moving charge</li>
+<li>Effect of magnetic field on conductor</li>
+<li>Magnetic flux, Electromagnetic Induction and Lenz's law</li>
+<li>Induced emf and magnetic force</li>
+<li>Time varying Magnetic field, Induced elaectric field</li>
+<li>Inductance:Self and Mutual</li></ul>
+
+<h4 class="p1">LCR</h4>
+<ul class="p2"><li>LCR:Steady state and Initial transient state</li>
+<li>LCR:Transient State</li></ul> 
+
+<h4 class="p1">Alternating Current</h4>
+<ul class="p2"><li>Mean and RMS values, Power factor</li>
+<li>Current voltage relationship and power for Resistors, Capacitors, Inductors</li>
+<li>Series setups</li>
+<li>Phasor diagrams, Parallel setups</li></ul>
+
+<h4 class="p1">Modern Physics</h4>
+<ul class="p2"><li>Photons, Intensity and deBroglie Wavelength</li>
+<li>Photoelectric Effect</li>
+<li>Atomic Model</li>
+<li>Spectral Lines and Transitions</li>
+<li>Radioactivity</li>
+<li>Fusion and Fission, X-rays,Moseley's law</li></ul>
+
+<h4 class="p1">Reflection</h4>
+<ul class="p2"><li>Plane Mirrors and deviation by multiple mirrors</li>
+<li>Sign convention, Single spherical mirror reflection</li>
+<li>Multiple Spherical mirror reflection</li></ul>
+
+<h4 class="p1">Refraction</h4>
+<ul class="p2"><li>Plane surface refraction, Refraction by Slabs</li>
+<li>Prisms</li>
+<li>Single surface refraction</li>
+<li>Refraction by lenses, Lens maker's formula</li>
+<li>Combination and silvering of Lenses</li>
+<li>Optical Instruments, Aberration</li></ul>
+
+<h4 class="p1">Waves and Sounds</h4>
+<ul class="p2"><li>Transverse wave:Power, Energy, Intensity and Longitudinal Waves</li>
+<li>Superposition, Reflection from fixed and free end, Stationary waves in Strings</li>
+<li>Resonance tube, Standing sound waves, resonance tube</li>
+<li>Pressure wave, Intensity in decibles</li>
+<li>Doppler Effect</li></ul>
+
+<h4 class="p1">Wave Optics</h4>
+<ul class="p2"><li>Phase and Path difference, Constructive and Destructive Interfernce</li>
+<li>Method of obtaining coherent sources </li>
+<li>Introduction of slab, Intensity Variation</li></ul>
+
+<h4 class="p1">Additional Topics</h4>
+<ul class="p2"><li>Semi Conductors</li>
+<li>Electromagnetic waves and Communication system</li>
+<li>Diffraction, Polarisation and Resolving Power</li>
+<li>Magnetism</li>
+<li>Experiments</li></ul>
+
+</div>
+
+<div id="chemistry" style="display:none;"> 
+<h2>Chemistry</br>
+Section A:Physical Chemistry</h2>
+<h4 class="p1"> Some Basic concepts in Chemistry</h4>
+<ul class="p2"><li>Matter and its nature, Dalton’s atomic theory; Concept of atom, molecule, element and compound. </li>
+<li>Physical quantities and their measurements in Chemistry, precision and accuracy, significant figures, S.I. Units, dimensional analysis </li>
+<li>Laws of chemical combination; Atomic and molecular masses, mole concept, molar mass, percentage composition, empirical and molecular formulae </li>
+<li> Chemical equations and stoichiometry. </li>
+</ul>
+
+<h4 class="p1">States of Matter </h4>
+
+<ul class="p2"><h4>Gaseous state</h4><li>Measurable properties of gases; Gas laws - Boyle’s law, Charle’s law, Graham’s law of diffusion, Avogadro’s law, Dalton’s law of partial pressure </li>
+<li>Concept of Absolute scale of temperature; Ideal gas equation, Kinetic theory of gases (only postulates) </li>
+<li>Concept of average, root mean square and most probable velocities  </li>
+<li>Real gases, deviation from Ideal behaviour, compressibility factor, van der Waals equation, liquefaction of gases, critical constants. </li>
+
+<h4>Liquid State</h4>
+<li>Properties of liquids - vapour pressure, viscosity and surface tension and effect of temperature on them (qualitative treatment only).</li>
+<h4>Solid State</h4>
+<li>Classification of solids: molecular, ionic, covalent and metallic solids, amorphous and crystalline solids (elementary idea)</li>
+<li>Bragg’s Law and its applications; Unit cell and lattices, packing in solids (fcc, bcc and hcp lattices), voids, calculations involving unit cell parameters, imperfection in solids </li>
+<li>Electrical, magnetic and dielectric properties. </li>
+</ul>
+
+
+<h4 class="p1">Atomic Structure</h4>
+
+<ul class="p2"><li>Discovery of sub-atomic particles (electron, proton and neutron) </li>
+<li>Thomson and Rutherford atomic models and their limitations; Nature of electromagnetic radiation, photoelectric effect</li>
+<li>Spectrum of hydrogen atom, Bohr model of hydrogen atom - its postulates, derivation of the relations for energy of the electron and radii of the different orbits, limitations of Bohr’s model</li>
+<li>Dual nature of matter, de-Broglie’s relationship, Heisenberg uncertainty principle.</li>
+<li>Elementary ideas of quantum mechanics, quantum mechanical model of atom, its important features, concept of atomic orbitals as one electron wave functions</li>
+<li>Variation of  ? and ?2 with r for 1s and 2s orbitals; various quantum numbers (principal, angular momentum and magnetic quantum numbers) and their significance</li>
+<li>shapes of s, p and d - orbitals, electron spin and spin quantum number</li>
+<li>Rules for filling electrons in orbitals - aufbau principle, Pauli’s exclusion principle and Hund’s rule, electronic configuration of elements, extra stability of half-filled and completely filled orbitals.</li>
+</ul>
+
+<h4 class="p1">Chemical Bonding and Molecular Structure </h4>
+<ul class="p2"><li>Kossel - Lewis approach to chemical bond formation, concept of ionic and covalent bonds. </li>
+<li>Ionic Bonding: Formation of ionic bonds, factors affecting the formation of ionic bonds; calculation of lattice enthalpy. </li>
+<li>Covalent Bonding: Concept of electronegativity, Fajan’s rule, dipole moment; Valence Shell Electron Pair Repulsion (VSEPR) theory and shapes of simple molecules. </li>
+<li>Quantum mechanical approach to covalent bonding: Valence bond theory - Its important features, concept of hybridization involving s, p and d orbitals; Resonance. </li>
+<li>Molecular Orbital Theory - Its important features, LCAOs, types of molecular orbitals (bonding, antibonding), sigma and pi-bonds, </li>
+<li>Molecular orbital electronic configurations of homonuclear diatomic molecules, concept of bond order, bond length and bond energy. </li>
+<li>Elementary idea of metallic bonding. Hydrogen bonding and its applications. </li>
+</ul>
+
+<h4 class="p1">Chemical Thermodynamics</h4>
+<ul class="p2"><li>Fundamentals of thermodynamics: System and surroundings, extensive and intensive properties, state functions, types of processes. </li>
+<li>First law of thermodynamics: Concept of work, heat internal energy and enthalpy, heat capacity, molar heat capacity; Hess’s law of constant heat summation </li>
+<li>Enthalpies of bond dissociation, combustion, formation, atomization, sublimation, phase transition, hydration, ionization and solution. </li>
+<li>Second law of thermodynamics: Spontaneity of processes; ?S of the universe and ?G of the system as criteria for spontaneity, ?Go (Standard Gibbs energy change) and equilibrium constant. </li></ul>
+
+<h4 class="p1">Solutions </h4>
+<ul class="p2"><li>Different methods for expressing concentration of solution - molality, molarity, mole fraction, percentage (by volume and mass both), vapour pressure of solutions</li>
+<li>Raoult’s Law - Ideal and non-ideal solutions, vapour pressure - composition, plots for ideal and non-ideal solutions </li>
+<li>Colligative properties of dilute solutions - relative lowering of vapour pressure, depression of freezing point, elevation of boiling point and osmotic pressure </li>
+<li>Determination of molecular mass using colligative properties; Abnormal value of molar mass, van’t Hoff factor and its significance. </li>
+</ul>
+
+<h4 class="p1">Equilibrium </h4>
+<ul class="p2"><li>Meaning of equilibrium, concept of dynamic equilibrium. </li>
+<li>Equilibria involving physical processes: Solid -liquid, liquid - gas and solid - gas equilibria, Henry’s law, general characterics of equilibrium involving physical processes. </li>
+<li>Equilibria involving chemical processes: Law of chemical equilibrium, equilibrium constants (Kp and Kc) and their significance, significance of ?G and ?Go in chemical equilibria </li>
+<li>Factors affecting equilibrium concentration, pressure, temperature, effect of catalyst; Le Chatelier’s principle. </li>
+<li>Ionic equilibrium: Weak and strong electrolytes, ionization of electrolytes, various concepts of acids and bases (Arrhenius, Bronsted - Lowry and Lewis) and their ionization, acid - base equilibria (including multistage ionization) </li>
+<li>ionization constants, ionization of water, pH scale, common ion effect, hydrolysis of salts and pH of their solutions, solubility of sparingly soluble salts and solubility products, buffer solutions. </li>
+</ul>
+
+<h4 class="p1">Redox Reaction</h4>
+<ul class="p2"><li>Electronic concepts of oxidation and reduction, redox reactions, oxidation number, rules for assigning oxidation number, balancing of redox reactions. </li>
+<li> </li>
+</ul>
+
+<h4 class="p1">Electrochamistry</h4>
+<ul class="p2"><li>Eectrolytic and metallic conduction, conductance in electrolytic solutions, specific and molar conductivities and their variation with concentration </li>
+<li>Kohlrausch’s law and its applications. </li>
+<li>Electrochemical cells - Electrolytic and Galvanic cells, different types of electrodes, electrode potentials including standard electrode potential </li>
+<li>Half - cell and cell reactions, emf of a Galvanic cell and its measurement; Nernst equation and its applications </li>
+<li>Relationship between cell potential and Gibbs’ energy change; Dry cell and lead accumulator; Fuel cells; Corrosion and its prevention. </li>
+</ul>
+
+<h4 class="p1">Chemical Kinetics </h4>
+<ul class="p2"><li>Rate of a chemical reaction, factors affecting the rate of reactions: concentration, temperature, pressure and catalyst </li>
+<li>lementary and complex reactions, order and molecularity of reactions, rate law, rate constant and its units, differential and integral forms of zero and first order reactions </li>
+<li>Their characteristics and half - lives, effect of temperature on rate of reactions - Arrhenius theory, activation energy and its calculation, collision theory of bimolecular gaseous reactions (no derivation).</li>
+</ul>
+
+<h4 class="p1">Surface Chemistry</h4>
+<ul class="p2"><li>Adsorption - Physisorption and chemisorption and their characteristics, factors affecting adsorption of gases on solids  </li>
+<li>Freundlich and Langmuir adsorption isotherms, adsorption from solutions. </li>
+<li>Catalysis - Homogeneous and heterogeneous, activity and selectivity of solid catalysts, enzyme catalysis and its mechanism.</li>
+<li>Colloidal state - distinction among true solutions, colloids and suspensions, classification of colloids - lyophilic, lyophobic</li>
+<li>multi molecular, macromolecular and associated colloids (micelles), preparation and properties of colloids</li>
+<li>Tyndall effect, Brownian movement, electrophoresis, dialysis, coagulation and flocculation; Emulsions and their characteristics.</li></ul>
+
+<h2>Section B: Inorganic Chemistry</h2>
+
+<h4 class="p1">Classification of Elements and Periodicity in Properties </h4>
+<ul class="p2"><li>Modem periodic law and present form of the periodic table, s, p, d and f block elements </li>
+<li>Periodic trends in properties of elements­atomic and ionic radii, ionization enthalpy, electron gain enthalpy, valence, oxidation states and chemical reactivity. </li></ul>
+
+<h4 class="p1">General Principles and Process of Isolation of Metals</h4>
+<ul class="p2"><li>Modes of occurrence of elements in nature, minerals, ores; steps involved in the extraction of metals - concentration, reduction (chemical. and electrolytic methods) and refining with special reference to the extraction of Al, Cu, Zn and Fe </li>
+<li>Thermodynamic and electrochemical principles involved in the extraction of metals. </li></ul>
+
+<h4 class="p1">Hydrogen </h4>
+<ul class="p2"><li>Position of hydrogen in periodic table, isotopes, preparation, properties and uses of hydrogen </li>
+<li> Physical and chemical properties of water and heavy water </li>
+<li>Structure, preparation, reactions and uses of hydrogen peroxide; Classification of hydrides - ionic, covalent and interstitial; Hydrogen as a fuel.</li></ul>
+
+<h4 class="p1">s - Block Elements </h4>
+<ul class="p2"><li>General introduction, electronic configuration and general trends in physical and chemical properties of elements, anomalous properties of the first element of each group, diagonal relationships. </li>
+<li>Preparation and properties of some important compounds - sodium carbonate, sodium chloride, sodium hydroxide and sodium hydrogen carbonate </li>
+<li>Industrial uses of lime, limestone, Plaster of Paris and cement</li>
+<li>Biological significance of Na, K, Mg and Ca.</li></ul>
+
+<h4 class="p1">p- Block Elements </h4>
+<ul class="p2"><li>General Introduction: Electronic configuration and general trends in physical and chemical properties of elements across the periods and down the groups</li>
+<li>unique behaviour of the first element in each group.</li>
+<li>Groupwise study of the p – block elements</li>
+<li>Group - 13: Preparation, properties and uses of boron and aluminium; Structure, properties and uses of borax, boric acid, diborane, boron trifluoride, aluminium chloride and alums.</li>
+<li>Group - 14: Tendency for catenation; Structure, properties and uses of allotropes and oxides of carbon, silicon tetrachloride, silicates, zeolites and silicones.</li>
+<li>Group - 15: Properties and uses of nitrogen and phosphorus; Allotrophic forms of phosphorus; Preparation, properties, structure and uses of ammonia, nitric acid, phosphine and phosphorus halides, (PCl3, PCl5); Structures of oxides and oxoacids of nitrogen and phosphorus.</li>
+<li>Group - 16: Preparation, properties, structures and uses of dioxygen and ozone; Allotropic forms of sulphur; Preparation, properties, structures and uses of sulphur dioxide, sulphuric acid (including its industrial preparation); Structures of oxoacids of sulphur.</li>
+<li>Group - 17: Preparation, properties and uses of chlorine and hydrochloric acid; Trends in the acidic nature of hydrogen halides; Structures of Interhalogen compounds and oxides and oxoacids of halogens.</li>
+<li>Group - 18: Occurrence and uses of noble gases; Structures of fluorides and oxides of xenon.</li>
+</ul>
+
+<h4 class="p1">d – and f – Block Elements</h4>
+<h4>Transition Element</h4>
+<ul class="p2"><li>General introduction, electronic configuration, occurrence and characteristics, general trends in properties of the first row transition elements</li>
+<li>Physical properties, ionization enthalpy, oxidation states, atomic radii, colour, catalytic behaviour, magnetic properties, complex formation, interstitial compounds, alloy formation; Preparation, properties and uses of K2Cr2O7 and KMnO4.</li>
+<h4>Inner Transition Metals
+<li>Electronic configuration, oxidation states, chemical reactivity and lanthanoid contraction.</li>
+
+<h4>Lanthanoids and Actinoids</h4>
+<li>Electronic configuration, oxidation states, chemical reactivity and lanthanoid contraction.</li></ul>
+
+<h4 class="p1">Co-ordination Compounds</h4>
+<ul class="p2"><li>Introduction to co-ordination compounds, Werner’s theory; ligands, co-ordination number, denticity, chelation; IUPAC nomenclature of mononuclear co-ordination compounds, isomerism</li>
+<li>Bonding-Valence bond approach and basic ideas of Crystal field theory, colour and magnetic properties; Importance of co-ordination compounds</li></ul>
+
+<h4 class="p1">Environmental Chemistry</h4>
+<ul class="p2"><li>Environmental pollution - Atmospheric, water and soil.</li>
+<li>Atmospheric pollution - Tropospheric and stratospheric</li>
+<li>Tropospheric pollutants - Gaseous pollutants: Oxides of carbon, nitrogen and sulphur, hydrocarbons; their sources, harmful effects and prevention</li>
+<li> Green house effect and Global warming; Acid rain; Particulate pollutants: Smoke, dust, smog, fumes, mist; their sources, harmful effects and prevention.</li>
+<li>Stratospheric pollution - Formation and breakdown of ozone, depletion of ozone layer - its mechanism and effects.</li>
+<li>Water Pollution - Major pollutants such as, pathogens, organic wastes and chemical pollutants; their harmful effects and prevention.</li>
+<li>Soil pollution - Major pollutants such as: Pesticides (insecticides,. herbicides and fungicides), their harmful effects and prevention.</li></ul>
+
+<h2>Section-C: Organic Chemistry</h2>
+<h4 class="p1">Purification and Characterisation of Organic Compounds</h4>
+<ul class="p2"><li>Purification - Crystallization, sublimation, distillation, differential extraction and chromatography - principles and their applications.</li>
+<li>Qualitative analysis - Detection of nitrogen, sulphur, phosphorus and halogens.</li>
+<li>Quantitative analysis (basic principles only) - Estimation of carbon, hydrogen, nitrogen, halogens, sulphur, phosphorus.</li>
+<li>Calculations of empirical formulae and molecular formulae; Numerical problems in organic quantitative analysis.</li></ul>
+
+<h4 class="p1">Some Basic Principles of Organic Chemistry</h4>
+<ul class="p2"><li>Tetravalency of carbon; Shapes of simple molecules - hybridization (s and p)</li>
+<li>Classification of organic compounds based on functional groups: - C = C - , - C ? C - and those containing halogens, oxygen, nitrogen and sulphur</li>
+<li>Homologous series; Isomerism - structural and stereoisomerism.</li>
+<li>Nomenclature (Trivial and IUPAC): Covalent bond fission - Homolytic and heterolytic: free radicals, carbocations and carbanions; stability of carbocations and free radicals, electrophiles and nucleophiles.</li>
+<li>Electronic displacement in a covalent bond - Inductive effect, electromeric effect, resonance and hyperconjugation</li>
+<li>Common types of organic reactions - Substitution, addition, elimination and rearrangement</li></ul>
+
+<h4 class="p1">Hydrocarbon</h4>
+<ul class="p2"><li>Classification, isomerism, IUPAC nomenclature, general methods of preparation, properties and reactions.</li>
+<h4>Alkanes</h4>
+<li> Conformations: Sawhorse and Newman projections (of ethane); Mechanism of halogenation of alkanes.</li>
+<h4>Alkenes</h4>
+<li>Geometrical isomerism; Mechanism of electrophilic addition: addition of hydrogen, halogens, water, hydrogen halides (Markownikoff’s and peroxide effect); Ozonolysis, oxidation, and polymerization.</li>
+<h4>Alkynes</h4>
+<li>Acidic character; Addition of hydrogen, halogens, water and hydrogen halides; Polymerization.</li><
+<h4>Aromatic Hydrocarbon</h4>
+<li>Nomenclature, benzene - structure and aromaticity; Mechanism of electrophilic substitution: halogenation, nitration, Friedel - Craft’s alkylation and acylation, directive influence of functional group in mono-substituted benzene.</li></ul>
+
+
+<h4 class="p1">Organic Compounds Containing Halogens</h4>
+<ul class="p2"><li>General methods of preparation, properties, reactions and uses.</li>
+<li>Environmental effects of chloroform, iodoform, freons and DDT.</li>
+
+<h4>Alcohols, Phenols and Ethers</h4>
+<li>Alcohols: Identification of primary, secondary and tertiary alcohols; mechanism of dehydration.<li>
+<li>Phenols: Acidic nature, electrophilic substitution reactions: halogenation, nitration and sulphonation, Reimer - Tiemann reaction.</li>
+<li>Ethers: Structure.</li>
+<h4>Aldehyde and Ketones</h4>
+<li>Nature of carbonyl group; Nucleophilic addition to >C=O group, relative reactivities of aldehydes and ketones</li>
+<li>Important reactions such as - Nucleophilic addition reactions (addition of HCN, NH3 and its derivatives), Grignard reagent; oxidation; reduction (Wolff Kishner and Clemmensen)</li>
+<li>acidity of ? - hydrogen, aldol condensation, Cannizzaro reaction, Haloform reaction</li>
+<li> Chemical tests to distinguish between aldehydes and Ketones.</li>
+<h4>Carboxylic Acids</h4><li>Acidic strength and factors affecting it.</li></ul>
+
+<h4 class="p1">Organic Compounds Containing Nitrogen</h4>
+<ul class="p2"><li>General methods of preparation, properties, reactions and uses.</li>
+<li>Amines: Nomenclature, classification, structure, basic character and identification of primary, secondary and tertiary amines and their basic character.</li>
+<li>Diazonium Salts: Importance in synthetic organic chemistry.</li></ul>
+
+<h4 class="p1">Polymers</h4>
+<ul class="p2"><li>General introduction and classification of polymers, general methods of polymerization - addition and condensation, copolymerization</li>
+<li>Natural and synthetic rubber and vulcanization; some important polymers with emphasis on their monomers and uses - polythene, nylon, polyester and bakelite.</li></ul>
+
+<h4 class="p1">Bio Molecules</h4>
+<ul class="p2"><li>Carbohydrates - Classification: aldoses and ketoses; monosaccharides (glucose and fructose), constituent monosaccharides of oligosacchorides (sucrose, lactose, maltose) and polysaccharides (starch, cellulose, glycogen)</li>
+<li>Proteins - Elementary Idea of amino acids, peptide bond, polypeptides; Proteins: primary, secondary, tertiary and quaternary structure (qualitative idea only), denaturation of proteins, enzymes.</li>
+<li>Vitamins - Classification and functions.</li>
+<li>Nucleic Acids - Chemical constitution of DNA and RNA. Biological functions of nucleic acids.</li></ul>
+
+<h4 class="p1">Chemistry in Everyday Life </h4>
+<ul class="p2"><li>Chemicals in medicines - Analgesics, tranquilizers, antiseptics, disinfectants, antimicrobials, antifertility drugs, antibiotics, antacids, antihistamins - their meaning and common examples.</li>
+<li>Chemicals in food - Preservatives, artificial sweetening agents - common examples.</li>
+<li>Cleansing agents - Soaps and detergents, cleansing action.</li></ul>
+
+<h4 class="p1">Principles Related to Practical Chemistry</h4>
+<ul class="p2"><li>Detection of extra elements (N,S, halogens) in organic compounds; Detection of the following functional groups: hydroxyl (alcoholic and phenolic), carbonyl (aldehyde and ketone), carboxyl and amino groups in organic compounds.</li>
+<li>Chemistry involved in the preparation of the following:
+Inorganic compounds: Mohr’s salt, potash alum.
+Organic compounds: Acetanilide, p-nitroacetanilide, aniline yellow, iodoform.</li>
+<li>Chemistry involved in the titrimetric excercises - Acids bases and the use of indicators, oxalic-acid vs KMnO4, Mohr’s salt vs KMnO4.</li>
+<li>Chemical principles involved in the qualitative salt analysis:
+Cations - Pb2+ , Cu2+, AI3+, Fe3+, Zn2+, Ni2+, Ca2+, Ba2+, Mg2+, NH4+.</li>
+<li>Anions- CO32-, S2-, SO42-, NO2-, NO3-, CI-, Br, I. (Insoluble salts excluded).</li>
+<li>Chemical principles involved in the following experiments:
+1. Enthalpy of solution of CuSO4
+2. Enthalpy of neutralization of strong acid and strong base. .
+3. Preparation of lyophilic and lyophobic sols.
+4. Kinetic study of reaction of iodide ion with hydrogen peroxide at room temperature.</li></ul>
+
+
+
+
+</div>
+<div id="math" style="display:none;">
+<h2>Mathematics</h2>
+<h4 class="p1">Quadratic Equation, Inequalities, Logarithms</h4>
+<ul class="p2"><li>Introduction, Relation between roots, Formation of roots, Common roots</li> 
+<li>Basic Inequalities</li>
+<li>Modulus Function</li>
+<li>Greatest Integer, Least Integer and Fractional part function</li>
+<li>Logarithmic, Cubic and Biquadratic Equation</li>
+<li>Quadratic Graphs and location of roots</li></ul>
+
+<h4 class="p1">Sequence and Series</h4>
+<ul class="p2"><li>Arithmetic Progression(A.P), its properties, selection of terms in AP</li>
+<li>Sum of first n terms of an AP</li>
+<li>Geometric Progression(GP), Its properties, selection of terms in GP</li>
+<li>Summation formula of an GP</li>
+<li>Arithmetico Geometrico Progression(AGP)</li>
+<li>Harmonic Progression, Its properties, nth term of an HP</li>
+<li>Arithmetic Mean(AM), Geometric Mean(GM), Harmonic Mean(HM), Relation between AM GM HM</li>
+<li>Sum of n terms of special sequences, concept of sigma</li></ul>
+
+<h4 class="p1">Trigonometric Function</h4>
+<ul class="p2"><li>Compound angle formulae, Transformation Formulae, Multiple and Submultiple angles</li>
+<li>Trigonometrical ratios of some useful angles, Maximum and Minimum values</li>
+</ul>
+
+<h4 class="p1">Trigonometric Equations</h4>
+<ul class="p2"><li>General solution of a trigonometric equation</li>
+<li>Equation and Inequalities based problems</li><li></li></ul>
+
+<h4 class="p1">Straight Lines</h4>
+<ul class="p2"><li>Distance and Section formulae, Slope of a line, Form of straight lines</li>
+<li>Postion of two lines with respect to a line</li>
+<li>Condition of concurrency of three lines, distance of a point from a line, Lines perpendicular and parallel to a given lines, foot of perpendicular</li>
+<li>Circumcentre and orthocentre of a triangle</li>
+<li>Slope of a lines equally inclined to a given lines, Equation of bisectors</li>
+<li>Family of lines through the points of intersecting of two given lines</li>
+<li>Locus</li></ul>
+
+<h4 class="p1">Pair of Lines</h4>
+<ul class="p2"><li>Introduction, Pair of lines through origin and angle between them</li>
+<li>Bisectors of the angle through origin and general equation of second degree representing pairs of lines</li>
+<li>Pair of intersection and angular bisector of pairs of lines in all forms, extension to 3 or more</li>
+<li>Translation and Rotation of axes</li></ul>
+
+<h4 class="p1">Circles</h4>
+<ul class="p2">
+<li>Differemt forms of circle, Tangent, Power and Length of tangent</li>
+<li>Pair of tangents, Director circle, Position circle, Position of a point relative to circle, Normal, Chord of contact</li>
+<li>Pair of circles, Common Chord, Common tangents</li>
+<li>Orthogonal Intersection, Radical axis, Radical centre</li>
+<li>Misc. problems, Locus</li></ul>
+
+<h4 class="p1">Complex Numbers</h4>
+<ul class="p2"><li>Intoduction, Algebric operation on complex numbers</li>
+<li>Modulus and conjugate, Representation of a complex number on Argand plane</li>
+<li>Arguement, Polar form, Euler form, Demoivre's theorom, Roots of complex number, Roots of unity</li>
+<li>Geometry of complex numbers, Locus involving arguements,Modulus</li></ul>
+
+<h4 class="p1">Permutation and Combination</h4>
+<ul class="p2"><li>Concept of factorials, exponent of prime</li>
+<li>Fundamental pricipals of countimg: sum, product</li>
+<li>Concept of nCr and nPr and simple problems</li>
+<li>Permutation under certain conditions</li>
+<li>Permutation: object, word, number problems</li>
+<li>Circular permutation, Selection of one or more objects</li>
+<li>Division of objects into groups, including number of divisors and sum of divisors</li>
+<li>Method of partitions</li></ul>
+
+<h4 class="p1">Binomial Theorom</h4>
+<ul class="p2"><li>Binomial theorom for positive integral index, Properties</li>
+<li>General term, Middle term, Integral and fraction part</li>
+<li>Numerically greatest term, Divisibility problems, Unit digit of a number</li>
+<li>Property of binomial coefficient</li>
+<li>Summation of series involving binomial coefficient</li>
+<li>Multinomial Theorom, Binomial Theorom for negetive and fractional index</li></ul>
+
+
+<h4 class="p1">Properties of Triangle</h4>
+<ul class="p2"><li>Terminology, Sine rule, Area of triangle, Napier's Analogy</li>
+<li>Laws of cosines, Projection rules, Half angle formulae</li>
+<li>Length of medians and bisectors</li>
+<li>Circle connected to a triangle</li>
+<li>Polygons, Inscribed and Circumscribed circle of regular polygon</li></ul>
+
+<h4 class="p1">Inverse Trigonometric Function</h4>
+<ul class="p2"><li>Domainand range, Indentities, Conditional Identities</li>
+<li>Equation and Inequation, series related problems</li>
+<li>Function:Injective, Surjective, Bijective</li>
+<li>Domain and range of a function</li>
+<li>Even and odd function, Periodic function, Inverse function</li>
+<li>Composite function, Simple functional relations, Graphic Transformation</li>
+<li>Maximum-Minimum functions</li></ul>
+
+<h4 class="p1">Limits</h4>
+<ul class="p2"><li>RHL and LHL, Direct, Factorization, Rationalization Method</li>
+<li>Standard Formulae</li>
+<li>Trigonometric Limit</li>
+<li>Exponential and Logarithmic Limit</li>
+<li>Problems based on Expansion series</li></ul>
+
+<h4 class="p1">Continuity and Diffrentiability</h4>
+<ul class="p2"><li>Left Hand and Right Hand Limit, Continuity of a function</li>
+<li>Continuity of a function in an Interval</li>
+<li>Differentiability of a function at a point</li>
+<li>Differentiability of a function in an interval</li></ul>
+
+<h4 class="p1">Differentiation</h4>
+<ul class="p2"><li>Fundamental rules of differentiation, Differentiation of a function</li>
+<li>Differentiation of Implicit function, Logarithmic Function, Parametric function</li>
+<li>Diffrentiation of one function with respect to other function</li>
+<li>Higher order derivatives</li></ul>
+
+<h4 class="p1">Application of Derivatives</h4>
+<ul class="p2"><li>Rate measure, Tangent and Normal, Tangent from an external point</li>
+<li>Length of tangent, normal, subtangent, subnormal</li>
+<li>Angle betweem intersecting curves, Monotonicity</li>
+<li>L'Hospital's rule, Maxima and Minima</li>
+<li>Test for Minima/Maxima</li>
+<li>Geometrical Problems on Maxima-Minima</li></ul>
+
+<h4 class="p1">Mean Value Theorom</h4>
+<ul class="p2"><li>Introduction, Intermediate Value Theorom, rolle's Theorom</li>
+<li>Lagrange's Mean Value Theorom, Cauchy's Theorom</li><li></li></ul>
+
+<h4 class="p1">Indefinate Integration</h4>
+<ul class="p2"><li>Reverse of diffrentiation, Direct Integration</li>
+<li>Basic Substitution</li>
+<li>Standard Integral Forms</li>
+<li>Quadratic Forms, Trigonometric Forms</li>
+<li>Integration by parts, Partial Fraction</li>
+<li>Integration of irrational algebric function, Special Types</li></ul>
+
+<h4 class="p1">Definite Integration</h4>
+<ul class="p2"><li>Introduction, Leibnitz's formula, Properties of Definite Integration</li>
+<li>Definite Integrals as the limit of a sum</li>
+<li>Area of bounded region</li>
+<li>Differentiation of definite Integral</li>
+<li>Integration by differentiation with respect to other</li>
+<li>Estimation</li></ul>
+
+<h4 class="p1">Differential Equation</h4>
+<ul class="p2"><li>Introduction, Order and Degree</li>
+<li>Formation of differential equation, Solution of different equation</li>
+<li>Variable seperable and reducing to variable seperable</li>
+<li>Homogenous Differential Equation</li>
+<li>Linear Differential Equation</li>
+<li>Differential equation of 1st order but not 1st degree</li>
+<li>Application of differential equation</li></ul>
+
+<h4 class="p1">Matrices and Determinant</h4>
+<ul class="p2"><li>Introduction, Properties of determinants</li>
+<li>Product and summation of two determinants</li>
+<li>Cramer's rule, classification of matrices, Equality of matrices</li>
+<li>Addition and Multiplication of a matrices</li>
+<li>Transpose of a matrices, Solving system of Linear equation</li>
+<li>Trace of matrices, Symmetric and Skew-Symetric matrices, Adjoint, Inverse of a matrix</li></ul>
+
+<h4 class="p1">Probability</h4>
+<ul class="p2"><li>Introduction, Important terms related to probability</li>
+<li>Addition Theorom on probability</li>
+<li>Independent event, Conditional probability, Bayes Theorom on conditional probability</li>
+<li>Multiplication Theorom, Law of total probability</li>
+<li>Probability distribution, Binomial distribution</li></ul>
+
+<h4 class="p1">Conics</h4>
+<ul class="p2"><li>General defination of conics, Parabola, Standard forms</li>
+<li>Term related to parabola, General Equation</li>
+<li>Parametric form, Position of a point w.r.t a parabola</li>
+<li>Chord, focal chord, tangent at a point, slope form of tangent</li>
+<li>Condition of tangency and normalcy</li>
+<li>Properties related to tangent and normals</li>
+<li>Conormal, Pair of tangent from a given point</li>
+<li>Chord of contact, Chord whose middle point is given</li>
+<li>Locus related to parabola</li>
+<li>Ellipse and Hyperbola: Basic properties and standard form</li>
+<li>Ellipse and Hyperbola: Tangent, Normals, Parametric form</li>
+<li>Ellipse:Director circle, Auxilary circle, Diameter</li>
+<li>Conjugate Hyperbola, rectangular Hyperbola</li>
+<li>Elipse and Hyperbola:Locus problems</li></ul>
+
+<h4 class="p1">Vectors</h4>
+<ul class="p2"><li>Intoduction, Types of vectors, Section formula and geometrical problems</li>
+<li>Product of two vectors, Triple product including geometrical meaning</li>
+<li>Linear dependence and independence of vectors</li>
+<li>Reciprocal systems of vectors, Vector equations</li></ul>
+
+<h4 class="p1">3-D Geometry</h4>
+<ul class="p2"><li>Distance formula, Section formula, Direction cosines and direction ratio</li>
+<li>Angle between lines and projection</li>
+<li>Plane: General Equation, Equation of plane passing through given points, Intercept and Normal form of plane</li>
+<li>Angle between two planes. Distance of a point from a plane</li>
+<li>Distance between parallel planes, Planes passing through intersection of two planes</li>
+<li>Image of point with respect to a planes</li>
+<li>Straight line, Symmetrical form, Unsymmetrical form</li>
+<li>Angle between line and a plane</li>
+<li>Intersection of a line and a plane</li>
+<li>Condition for a line to lie in a plane</li>
+<li>Coplanar lines, Shortest distance between lines, Image of a point in a line, Skew line, Shortest distance</li></ul>
+
+<h4 class="p1">Statistics</h4>
+<ul class="p2"><li>Measurement of central tendecy-Mean, Median, Mode</li>
+<li>Measurement of dispersion, Range, Mean deviation</li>
+<li>Variance, Standard deviation, Quartile deviation</li></ul>
+
+<h4 class="p1"> Additional Topics</h4>
+<ul class="p2"><li>Mathematical Reasonin</li>
+<li>Set Theory</li></ul>
+
+</div>
+</div>
+<div class="col-sm-2"> </div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<DOCTYPE!>
+<html>
+<head>
+<title>GuideEngineers</title>
+<meta name='viewport'content='width=device-width,initia-scale=1'>
+<link rel="stylesheet"  href="1.css">
+<style>
+h2
+{
+text-align:center;
+font-size:40px;
+}
+h3
+{
+text-align:center;
+font-size:30px;
+}
+body
+{
+font-size:20px;
+}
+</style>
+<h1><a class="head">Guide Engineers</a></br>
+the only search engine for engineers</br>
+<a href="Home.html"><button class="button">Home</button></a>
+<a href="Condition.html"><button class="button">Guide</button></a>
+<button class="button">Notifications</button>
+<button id="myBtn1" class="button">Register</button></h1>
+
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">×</span>
+    <form style="font-size:20px;">
+    <h3 style="text-align:center; font-size:30px;">Fill in the required data to login</h3>
+       Name:<input style="margin-left:20px;" required><br><p></p><br>
+       Email:<input style="margin-left:20px;" type='tel' type='email' required>
+    
+       <br><p></p><br>
+       <input type='submit' value="Register" >
+    </form>
+  </div>
+</div>
+
+<script>
+var nam;
+var modal1 = document.getElementById('myModal1');
+
+var btn1 = document.getElementById("myBtn1");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() 
+{
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() 
+{
+    modal1.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+function my() 
+{
+   nam=document.getElementById('q').value;
+   document.getElementById('d1').innerHTML=nam;
+   document.getElementById('d2').innerHTML="Profile";
+   alert("Here the window is getting refreshed due to which my variables value is getting lost that the name is not being displayed at the top right corner");
+}
+
+textfield = document.getElementById("datatext");
+contentselect = document.getElementById("contentselect");
+
+contentselect.onchange = function()
+{
+     var text = contentselect.options[contentselect.selectedIndex].value
+     if(text != "")
+         {
+             textfield.value += text;
+         }
+}
+
+
+</script>
+
+</head>
+
+<body>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-2"></div>
+  
+    <div class="col-sm-8"><h2>COMEDK</h2>
+<p>This is an private association which serves students according to their merit to get admitted in different colleges of Karnataka. ComedK stands for Constrium
+of Medical, Engineering and Dental colleges of Karnataka. This entrance examination provide a portal for admission in all the colleges in Bengaluru and other
+cities.</p>
+</h3>List of top colleges which consider comedK marks are mentioned below</p>
+<ul>
+<li>BMS College of engineering</li>
+<li>Dayananda College of Engineering</li>
+<li>MS Ramaiah Institute of Technolgy</li>
+<li>PES Institute of Technology</li>
+<li>RV College of Engineering</li>
+</ul>
+<p>There are more than 150 colleges in Karnataka including engineering, medical and dental colleges. Competition for top 10 colleges are very high. Application form
+for entrance examination is available from February and the examination is being held in the month of may.Examination isbeing held in all the major cities of every state.</p>
+<h3>Exam Pattern</h3>
+<p>Entrance examination paper consists of 180 multiple choice question and each question carries 1 marks and there is no negetive marks for wrong answer</p>
+<p style="padding-left:10%;">Section 1- Mathematics 60 question</p>
+<p style="padding-left:10%;">Section 2- Physics 60 question</p>
+<p style="padding-left:10%;">Section 3- Chemistry 60 question</p>
+<h3>Fee structure and Counselling procedure</h3>
+<p>At the time of admission an amount of 50,000 is paid to the respective college to ensure that you will be taking admission in that particular college. As there are more that 150
+colleges therefore the fees vary a bit. Maximum fees of any college under comedk does not cross 1,40,000 annualy.</p>
+</p>While going for the counselling make sure that you carry your rank card with yourself. Without this you wont be marked present on the counselling day. Candidtae should also carry
+original documents of secondry examination and bio-metric verification with themselves(mediacal certificate).</p>
+</div>
+ <div class="col-sm-2"></div>
+  </div>
+</div>
+</body>
+</html>

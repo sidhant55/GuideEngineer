@@ -1,0 +1,131 @@
+<DOCTYPE!>
+<html>
+<head>
+<title>GuideEngineers</title>
+<meta name='viewport'content='width=device-width,initia-scale=1'>
+<link rel="stylesheet"  href="1.css">
+<style>
+
+h1.c1
+{
+background-color:cyan;
+padding-top:50px;
+text-align:center;
+padding-bottom:20px;
+font-size:55px;
+}
+h3.a3
+{
+padding-top:20px;
+}
+p
+{
+padding-left:50px;
+font-size:20px;
+}
+table
+{
+text-align:center;
+}
+table,a.c5
+{
+text-align:center;
+color:brown;
+font-size:20px;
+}
+</style>
+
+
+</head>
+<body>
+<h1><a class="head">Guide Engineers</a></br>
+the only search engine for engineers</br>
+<a href="Home.html"><button class="button">Home</button></a>
+<a href="Condition.html"><button class="button">Guide</button></a>
+<button class="button">Notifications</button>
+<button id="myBtn1" class="button">Register</button></h1>
+
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">×</span>
+    <form style="font-size:20px;">
+    <h3 style="text-align:center; font-size:30px;">Fill in the required data to login</h3>
+       Name:<input style="margin-left:20px;" required><br><p></p><br>
+       Email:<input style="margin-left:20px;" type='tel' type='email' required>
+    
+       <br><p></p><br>
+       <input type='submit' value="Register" >
+    </form>
+  </div>
+</div>
+
+<script>
+var nam;
+var modal1 = document.getElementById('myModal1');
+
+var btn1 = document.getElementById("myBtn1");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() 
+{
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() 
+{
+    modal1.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+function my() 
+{
+   nam=document.getElementById('q').value;
+   document.getElementById('d1').innerHTML=nam;
+   document.getElementById('d2').innerHTML="Profile";
+   alert("Here the window is getting refreshed due to which my variables value is getting lost that the name is not being displayed at the top right corner");
+}
+
+textfield = document.getElementById("datatext");
+contentselect = document.getElementById("contentselect");
+
+contentselect.onchange = function()
+{
+     var text = contentselect.options[contentselect.selectedIndex].value
+     if(text != "")
+         {
+             textfield.value += text;
+         }
+}
+
+
+</script>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-2"></div>
+  
+    <div class="col-sm-8"><h3 class="a3" style="font-size:20px;">There are many choices available for you to take admission. But you should choose the correct option so that the overall result is in your favour. There are several preferences of taking admission in colleges which you must follow.</h3> 
+<p >* If you are getting any IIT then go for it whichever branch you get. One thing you should keep in mind that never miss a college just because of the branch you want. It means you should go for textile technology in IIT Delhi rather than taking any core branch in IIT Bhubaneswar.</p>
+<p >* During the counselling, you should fill your choice in correct order. You are allotted that branch of a college, whichever occurred first in your preference list. For example the system will check the first choice of your list, if you are not getting then it will check the second and so on.</p>
+<p >* As soon as the system finds your seat, all the choices below that will be rejected. For instance, if 6th choice is available for you then from 7th up to the last choice will be rejected. Now you can only be promoted from 6th to 5th or 4th and so on.</p>
+<p >* Don't just fill colleges in which there is less chance of getting admission because it will end up getting no seat allotted to you. Try to fill as many colleges and branch keeping in mind the above two points.</p>
+<p >* If you do not get any government college, don't be sad there are many good private colleges which are as good as or better than government colleges.</p>
+<p >* If you are going for private college try to search for college which is best and not very far from your hometown or city.
+<p >* Try not to drop your year because it becomes an important topic of discussion at the time of interview. Dropping year also result in losing concentration and decrease your consistency in performing well. There will be a lot of pressure as it would be your last chance to get admitted to any college.</p>
+<p >* Even if you want to drop, there is no harm but don't drop forcefully. Ultimately it is you who have to appear in the exam and score good marks.</p>
+<p>* There's always one option available for you if you are not getting admission in your desired college. To be on a safe side get admitted to any college and then work very hard for the entrance exam. Obviously the burden on you will increase two to three times than the previous one but there is always a chance.
+ Very less percentage of people get success this way.</p>
+<p >* Please read all the points time and again and all the best for your future.</p>
+<h4 style="font-size:20px;"> If you have any queries please post your question and the answer would be mailed in your email id within 6 hours.</h4>
+</div>
+ <div class="col-sm-2"></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<DOCTYPE!>
+<html>
+<head>
+<title>GuideEngineers</title>
+<meta name='viewport'content='width=device-width,initia-scale=1'>
+<link rel="stylesheet"  href="1.css">
+<style>
+
+h2
+{
+text-align:center;
+font-size:40px;
+}
+h3
+{
+text-align:center;
+font-size:30px;
+}
+body
+{
+font-size:20px;
+}
+</style>
+<h1><a class="head">Guide Engineers</a></br>
+the only search engine for engineers</br>
+<a href="Home.html"><button class="button">Home</button></a>
+<a href="Condition.html"><button class="button">Guide</button></a>
+<button class="button">Notifications</button>
+<button id="myBtn1" class="button">Register</button></h1>
+
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">×</span>
+    <form style="font-size:20px;">
+    <h3 style="text-align:center; font-size:30px;">Fill in the required data to login</h3>
+       Name:<input style="margin-left:20px;" required><br><p></p><br>
+       Email:<input style="margin-left:20px;" type='tel' type='email' required>
+    
+       <br><p></p><br>
+       <input type='submit' value="Register" >
+    </form>
+  </div>
+</div>
+
+<script>
+var nam;
+var modal1 = document.getElementById('myModal1');
+
+var btn1 = document.getElementById("myBtn1");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() 
+{
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() 
+{
+    modal1.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+function my() 
+{
+   nam=document.getElementById('q').value;
+   document.getElementById('d1').innerHTML=nam;
+   document.getElementById('d2').innerHTML="Profile";
+   alert("Here the window is getting refreshed due to which my variables value is getting lost that the name is not being displayed at the top right corner");
+}
+
+textfield = document.getElementById("datatext");
+contentselect = document.getElementById("contentselect");
+
+contentselect.onchange = function()
+{
+     var text = contentselect.options[contentselect.selectedIndex].value
+     if(text != "")
+         {
+             textfield.value += text;
+         }
+}
+
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-2"></div>
+  
+    <div class="col-sm-8"> <h2>OJEE</h2>
+
+<p>Odisha Joint Entrance Examination (OJEE) is a state-government controlled centralised test for admission to many private and governmental medical, engineering & management 
+institutions in Odisha. The application form is released in the month of February and continues till March. Exam is being held in the month of May</p>
+<h3>List of few top colleges taking part</h3>
+<ul>
+<li>Veer Surendra Sai University of Technology, Sambalpur</li>
+<li>Indira Gandhi Institute of Technology, Sarang</li>
+<li>Government College of Engineering, Kalahandi</li>
+<li>Silicon Institute of Technology, Bhubaneswar</li>
+<li>Central Institute of Plastic Engineering and Technology, Bhubaneswar</li>
+<li>Orissa School of Mining Engineering, Keonjhar</li>
+<li>CV Raman College of Engineering, Bhubaneswar</li>
+<li>Parala Maharaja Engineering College, Berhampur</li>
+<li>Gandhi Institute of Engineering and Technology, Gunupur</li>
+<li>Gandhi Institute for Technological Advancement, Bhubaneswar</li>
+</ul>
+
+
+<h3>Examination Pattern</h3>
+<ul>
+<li>Subjects from which questions would be asked in the exam will be Mathematics, Chemistry and Physics.</li>
+<li>All the three sections of subjects will weigh equally.</li>
+<li>For any un-attempted question, no marks will be deducted.</li>
+<li>The paper I will be held in offline and online mode but Paper-II will only be held in offline mode.</li>
+<li>Type of questions to be asked in the exam would be of multiple choice type.</li>
+<li>Candidates have to mark one answer from the given set of 4 options.</li>
+<li>There would be negative marking for marking incorrect answers. For each wrong answer, ¼ marks shall be deducted.</li></ul>
+
+<h3>Counselling Process</h3>
+<p>Documents required at the time of counselling</p>
+<ul>
+<li>Class X, XII Mark Sheet and pass certificate</li>
+
+School Leaving Certificate</li>
+
+<li>JEE Main 2016 Rank Card</li>
+
+<li>Green Card issued by Family Welfare Department of Odisha</li>
+
+<li>Certificate in support of NRI</li>
+
+<li>Domicile Certificate</li>
+
+<li>Class X certificate showing the date of birth</li>
+
+<li>Caste certificate</li>
+
+<li>Caste Validity Certificate</li>
+</ul>
+</div>
+ <div class="col-sm-2"></div>
+  </div>
+</div>
+</body>
+</html>
