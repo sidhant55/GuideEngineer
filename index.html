@@ -1,0 +1,115 @@
+<DOCTYPE!>
+<html>
+<head>
+<title>GuideEngineers</title>
+<meta name='viewport'content='width=device-width,initia-scale=1'>
+<link rel="stylesheet"  href="1.css">
+<script type="text/javascript">
+
+var arr = [];
+
+arr[0]= new Image();
+arr[0].src = "lib.jpg";
+
+arr[1]= new Image();
+arr[1].src = "img2.jpg";
+
+arr[2]= new Image();
+arr[2].src = "img3.jpg";
+
+var i=0;
+
+function slide(){
+ document.getElementById("image1").src= arr[i].src;
+ i++;
+ if(i==arr.length){
+  i=0;
+ }
+ setTimeout(function(){ slide(); },3000);
+}
+
+</script>
+</head>
+</head>
+<body onLoad="slide('image1',arr);">
+<h1><a class="head">Guide Engineers</a></br>
+the only search engine for engineers</br>
+<button class="button">Home</button>
+<a href="Condition.html"><button class="button">Guide</button></a>
+<button class="button">Notifications</button>
+<button id="myBtn1" class="button">Register</button></h1>
+
+<div id="myModal1" class="modal">
+  <div class="modal-content">
+    <span class="close1">×</span>
+    <form style="font-size:20px;">
+    <h3 style="text-align:center; font-size:30px;">Fill in the required data to login</h3>
+       Name:<input style="margin-left:20px;" required><br><p></p><br>
+       Email:<input style="margin-left:20px;" type='tel' type='email' required>
+    
+       <br><p></p><br>
+       <input type='submit' value="Register" >
+    </form>
+  </div>
+</div>
+
+<script>
+var nam;
+var modal1 = document.getElementById('myModal1');
+
+var btn1 = document.getElementById("myBtn1");
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() 
+{
+    modal1.style.display = "block";
+}
+
+
+span1.onclick = function() 
+{
+    modal1.style.display = "none";
+}
+
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+function my() 
+{
+   nam=document.getElementById('q').value;
+   document.getElementById('d1').innerHTML=nam;
+   document.getElementById('d2').innerHTML="Profile";
+   alert("Here the window is getting refreshed due to which my variables value is getting lost that the name is not being displayed at the top right corner");
+}
+
+textfield = document.getElementById("datatext");
+contentselect = document.getElementById("contentselect");
+
+contentselect.onchange = function()
+{
+     var text = contentselect.options[contentselect.selectedIndex].value
+     if(text != "")
+         {
+             textfield.value += text;
+         }
+}
+
+
+</script>
+
+<div id="img"><img id="image1" height="600px" width="100%" border="5" style="border-color:black;" /></div>
+
+<div class="box11">Coaching Institutes</div>
+<a href="syllabus.html"><div class="box12">Syllabus</div></a>
+<a href="books.html"><div class="box13">Books to be refferd</div></a>
+<a href="Lists.html"><div class="box14">Application Forms available</div></a>
+<div class="box15">Different Examination</div>
+
+<follow us on facebook twitter>
+</body>
+
+</html>
