@@ -36,7 +36,7 @@ function slide(){
 the only search engine for engineers</br>
 <button class="button">Home</button>
 <a href="Condition.html"><button class="button">Guide</button></a>
-<button class="button" id = "notif">Notifications</button>
+<button id ="myBtn2" class="button" >Notifications</button>
 <button id="myBtn1" class="button">Register</button></h1>
 
 <div id="myModal1" class="modal">
@@ -56,33 +56,40 @@ the only search engine for engineers</br>
 
 <div id="myModal2" class="modal">
   <div class="modal-content">
-    <span class="close1">×</span>
-    <h3>Comming Soon!</h3>
+    <span class="close2">×</span>
+    <h3 style="text-align:center; font-size:30px;">Coming Soon!</h3>
   </div>
 </div>
 
 <script>
 var nam;
 var modal1 = document.getElementById('myModal1');
-var modal2 = document.getElementById('myModal2');
+
 var btn1 = document.getElementById("myBtn1");
 var span1 = document.getElementsByClassName("close1")[0];
-var notify = document.getElementById("notif");
+var span2 = document.getElementsByClassName("close2")[0];
+var modal2 = document.getElementById('myModal2');
+var btn2 = document.getElementById("myBtn2");
 btn1.onclick = function() 
 {
     modal1.style.display = "block";
 }
 
-notify.onclick = function()
-{
-  modal2.style.display = "block";
-}
+
 
 span1.onclick = function() 
 {
     modal1.style.display = "none";
     // modal2.style.display = "none";
+}
 
+btn2.onclick = function()
+{
+    modal2.style.display = "block";
+}
+span2.onclick = function(){
+    modal2.style.display = "none";
+}
 window.onclick = function(event) 
 {
     if (event.target == modal) 
